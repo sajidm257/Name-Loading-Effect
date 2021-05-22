@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 8rem;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1::before {
+    content: "~Sajid~";
+    width: 100%;
+    color: #2ed573;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 0.4rem solid #2ed573;
+    animation: slide 2s linear infinite;
+    -webkit-animation: slide 2s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+.center_div {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #2f3542;
+}
